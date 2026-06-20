@@ -20,7 +20,7 @@ class GeminiEmbeddingFunction(EmbeddingFunction):
         embeddings = []
         for text in input:
             response = genai.embed_content(
-                model="models/embedding-001",
+                model="models/gemini-embedding-001",
                 content=text,
                 task_type="retrieval_document"
             )

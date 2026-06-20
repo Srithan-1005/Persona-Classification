@@ -69,13 +69,27 @@ if "last_escalation" not in st.session_state:
 # Sidebar Config
 st.sidebar.header("🔑 API & Model Configuration")
 
-# API Key Input
-api_key = st.sidebar.text_input(
-    "Google Gemini API Key",
-    type="password",
-    value=os.getenv("GEMINI_API_KEY", ""),
-    help="Provide your Google Gemini developer API Key. Get one at ai.google.dev."
-)
+# Load API key from environment silently — never pre-fill the input with the actual value
+_env_api_key = os.getenv("GEMINI_API_KEY", "")
+
+if _env_api_key:
+    # Key is already set via .env — show a status badge, don't expose it
+    st.sidebar.success("✅ API Key loaded from `.env` file.")
+    _manual_key = st.sidebar.text_input(
+        "Override API Key (optional)",
+        type="password",
+        value="",
+        help="Leave blank to use the key from your .env file. Only enter a value here to override it."
+    )
+    api_key = _manual_key if _manual_key.strip() else _env_api_key
+else:
+    # No env key found — ask user to enter it
+    api_key = st.sidebar.text_input(
+        "Google Gemini API Key",
+        type="password",
+        value="",
+        help="Provide your Google Gemini developer API Key. Get one at ai.google.dev."
+    )
 
 st.sidebar.markdown("---")
 st.sidebar.header("⚙️ RAG Hyperparameters")
