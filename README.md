@@ -132,7 +132,7 @@ Escalations produce a structured summary payload with the target queue:
 3. Activate the virtual environment:
    - **Windows PowerShell:**
      ```powershell
-     .venv\Scripts\Activate.ps1
+     .venv\\Scripts\\Activate.ps1
      ```
    - **macOS/Linux:**
      ```bash
@@ -159,7 +159,7 @@ Run the generator script to construct the knowledge base `/docs/data` directory 
 python create_mock_data.py
 ```
 
-### 2. Ingest the Data into Vector DB
+### 2. Ingest the Data Into Vector DB
 You can either run the standalone script or click the **"Ingest Documents"** button in the Streamlit Sidebar:
 ```bash
 python ingest.py
