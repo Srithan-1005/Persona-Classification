@@ -1,0 +1,23 @@
+# Environment files (never commit API keys!)
+.env
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# ChromaDB persistent store
+chroma_db/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

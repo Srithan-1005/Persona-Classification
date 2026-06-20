@@ -1,0 +1,12 @@
+GDPR Privacy Policy & Data Deletion
+Source: gdpr_privacy_policy.txt | Version: v2.1 | Section: Legal
+
+Sensitive Action: Account data deletion and GDPR compliance.
+Under General Data Protection Regulation (GDPR) Article 17 (Right to Erasure), users have the right to request absolute deletion of all PII (Personally Identifiable Information).
+Data deletion requests are permanent and cannot be undone.
+
+To request deletion:
+1. Go to Account Settings > Privacy > Delete Account.
+2. Verify via your email credentials.
+3. Once submitted, compliance teams have 30 days to purge the records from active servers and backups.
+Alternatively, email data-privacy@company.com with the subject line "GDPR Erasure Request".

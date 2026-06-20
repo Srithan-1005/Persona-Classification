@@ -1,0 +1,9 @@
+Enterprise Third-Party Integrations
+Source: enterprise_integrations.txt | Version: v1.0 | Section: Features
+
+We support native integrations with Salesforce, Slack, Jira, and HubSpot.
+To activate integrations:
+1. Go to Workspace Settings > Integrations.
+2. Select the platform and click 'Authenticate'.
+3. Follow the OAuth prompt to authorize connections.
+Enterprise support plans include guided setup with an integration specialist.

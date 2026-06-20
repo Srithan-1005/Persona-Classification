@@ -1,0 +1,8 @@
+Security and Compliance Best Practices
+Source: security_best_practices.txt | Version: v3.1 | Section: InfoSec
+
+To maintain account safety:
+- Never commit raw API keys or passwords in version control.
+- Enable Multi-Factor Authentication (MFA) under Security settings.
+- Implement Role-Based Access Control (RBAC) to limit member privileges.
+- Regularly review audit logs for anomalous logins or configuration changes.

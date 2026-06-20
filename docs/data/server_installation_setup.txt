@@ -1,0 +1,11 @@
+Server Installation & Port Configuration Setup
+Source: server_installation_setup.txt | Version: v1.2 | Section: Infrastructure
+
+Our enterprise service daemon runs on port 8080 by default. To modify this, you must edit the local configuration environment variables.
+Open the environment file `.env` in your installation directory and define:
+PORT=9000
+
+After changing the port variable, restart the pm2 service runner:
+pm2 restart ecosystem.config.js
+
+Ensure your network security group rules allow traffic on port 9000. If traffic is blocked, check local firewalls (e.g. ufw or iptables) to verify ports are open.
